@@ -17,3 +17,11 @@ function validateForm(){
 		 return false;
 	 }
 }
+
+$(document).ready(function(){
+	var patientId = $("patientId").val();
+	localStorage.setItem("ID", patientId );
+	window.location.href="NewDoctorData.html";
+	return false;
+	
+}
